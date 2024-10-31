@@ -14,8 +14,24 @@ footer {
   align-items: center;
 }
 
+@keyframes icons-move-up {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer-icons__img {
   width: 50px;
+}
+
+.footer-icons:hover .footer-icons__img {
+  animation: 1.5s icons-move-up;
 }
 
 .footer-icons {
